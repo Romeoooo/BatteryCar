@@ -10,4 +10,10 @@
 
 @interface BCBaseViewController : UIViewController
 
+@property (assign, nonatomic) CGFloat navHeight; //导航高度
+
+- (void)setBackButtonImage:(UIImage *)image;
+- (void)setTitleLabelText:(NSString *)text;
+- (void)backAction;
+
 @end

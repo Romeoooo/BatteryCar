@@ -25,6 +25,12 @@
 		6E1B9A26210EB5EF00C21999 /* home_customer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A17210EB5EF00C21999 /* home_customer.png */; };
 		6E1B9A27210EB5EF00C21999 /* home_receive.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A18210EB5EF00C21999 /* home_receive.png */; };
 		6E1B9A28210EB5EF00C21999 /* user_center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A19210EB5EF00C21999 /* user_center@2x.png */; };
+		6E1B9A2F210EB85200C21999 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A2C210EB85100C21999 /* back.png */; };
+		6E1B9A30210EB85200C21999 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A2D210EB85100C21999 /* back@2x.png */; };
+		6E1B9A31210EB85200C21999 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A2E210EB85100C21999 /* back@3x.png */; };
+		6E1B9A34210EBB6F00C21999 /* BCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B9A33210EBB6F00C21999 /* BCHomeViewController.m */; };
+		6E1B9A37210EBF5B00C21999 /* BCHome_NoCarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B9A36210EBF5B00C21999 /* BCHome_NoCarView.m */; };
+		6E1B9A3B210EEE8100C21999 /* test_map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B9A3A210EEE8100C21999 /* test_map.jpg */; };
 		6E407E3E210CD8E800F91EFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E407E3D210CD8E800F91EFA /* AppDelegate.m */; };
 		6E407E44210CD8E800F91EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E407E42210CD8E800F91EFA /* Main.storyboard */; };
 		6E407E46210CD8E800F91EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E407E45210CD8E800F91EFA /* Assets.xcassets */; };
@@ -54,6 +60,16 @@
 		6E1B9A17210EB5EF00C21999 /* home_customer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_customer.png; sourceTree = "<group>"; };
 		6E1B9A18210EB5EF00C21999 /* home_receive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_receive.png; sourceTree = "<group>"; };
 		6E1B9A19210EB5EF00C21999 /* user_center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_center@2x.png"; sourceTree = "<group>"; };
+		6E1B9A2A210EB6CC00C21999 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		6E1B9A2B210EB74700C21999 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6E1B9A2C210EB85100C21999 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		6E1B9A2D210EB85100C21999 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		6E1B9A2E210EB85100C21999 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		6E1B9A32210EBB6F00C21999 /* BCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCHomeViewController.h; sourceTree = "<group>"; };
+		6E1B9A33210EBB6F00C21999 /* BCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCHomeViewController.m; sourceTree = "<group>"; };
+		6E1B9A35210EBF5B00C21999 /* BCHome_NoCarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCHome_NoCarView.h; sourceTree = "<group>"; };
+		6E1B9A36210EBF5B00C21999 /* BCHome_NoCarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCHome_NoCarView.m; sourceTree = "<group>"; };
+		6E1B9A3A210EEE8100C21999 /* test_map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_map.jpg; sourceTree = "<group>"; };
 		6E407E39210CD8E800F91EFA /* BatteryCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E407E3C210CD8E800F91EFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E407E3D210CD8E800F91EFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +103,7 @@
 				6E407E47210CD8E800F91EFA /* LaunchScreen.storyboard */,
 				6E407E4A210CD8E800F91EFA /* Info.plist */,
 				6E407E4B210CD8E800F91EFA /* main.m */,
+				6E1B9A2B210EB74700C21999 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -102,6 +119,10 @@
 		6E1B9A01210EB3E500C21999 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6E1B9A3A210EEE8100C21999 /* test_map.jpg */,
+				6E1B9A2C210EB85100C21999 /* back.png */,
+				6E1B9A2D210EB85100C21999 /* back@2x.png */,
+				6E1B9A2E210EB85100C21999 /* back@3x.png */,
 				6E1B9A17210EB5EF00C21999 /* home_customer.png */,
 				6E1B9A10210EB5EE00C21999 /* home_customer@2x.png */,
 				6E1B9A0C210EB5EE00C21999 /* home_customer@3x.png */,
@@ -124,6 +145,10 @@
 		6E1B9A03210EB40100C21999 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6E1B9A32210EBB6F00C21999 /* BCHomeViewController.h */,
+				6E1B9A33210EBB6F00C21999 /* BCHomeViewController.m */,
+				6E1B9A35210EBF5B00C21999 /* BCHome_NoCarView.h */,
+				6E1B9A36210EBF5B00C21999 /* BCHome_NoCarView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -137,6 +162,21 @@
 				6E1B9A09210EB4A000C21999 /* BCNavigationView.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		6E1B9A29210EB68B00C21999 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6E1B9A2A210EB6CC00C21999 /* Constant.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6E1B9A3C210EF9B600C21999 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 		6E407E30210CD8E800F91EFA = {
@@ -160,6 +200,8 @@
 		6E407E3B210CD8E800F91EFA /* BatteryCar */ = {
 			isa = PBXGroup;
 			children = (
+				6E1B9A3C210EF9B600C21999 /* ThirdParty */,
+				6E1B9A29210EB68B00C21999 /* Tool */,
 				6E1B9A04210EB47700C21999 /* Base */,
 				6E1B9A03210EB40100C21999 /* Home */,
 				6E1B9A00210EB3CB00C21999 /* Resource */,
@@ -256,11 +298,15 @@
 				6E1B9A28210EB5EF00C21999 /* user_center@2x.png in Resources */,
 				6E1B9A25210EB5EF00C21999 /* home_receive@2x.png in Resources */,
 				6E407E46210CD8E800F91EFA /* Assets.xcassets in Resources */,
+				6E1B9A31210EB85200C21999 /* back@3x.png in Resources */,
 				6E1B9A1C210EB5EF00C21999 /* home_yellow_arrow@3x.png in Resources */,
+				6E1B9A2F210EB85200C21999 /* back.png in Resources */,
 				6E1B9A22210EB5EF00C21999 /* home_receive@3x.png in Resources */,
 				6E407E44210CD8E800F91EFA /* Main.storyboard in Resources */,
 				6E1B9A1A210EB5EF00C21999 /* user_center@3x.png in Resources */,
 				6E1B9A26210EB5EF00C21999 /* home_customer.png in Resources */,
+				6E1B9A3B210EEE8100C21999 /* test_map.jpg in Resources */,
+				6E1B9A30210EB85200C21999 /* back@2x.png in Resources */,
 				6E1B9A27210EB5EF00C21999 /* home_receive.png in Resources */,
 				6E1B9A1B210EB5EF00C21999 /* home_customer@3x.png in Resources */,
 			);
@@ -324,7 +370,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1B9A37210EBF5B00C21999 /* BCHome_NoCarView.m in Sources */,
 				6E407E4C210CD8E800F91EFA /* main.m in Sources */,
+				6E1B9A34210EBB6F00C21999 /* BCHomeViewController.m in Sources */,
 				6E1B9A0A210EB4A000C21999 /* BCNavigationView.m in Sources */,
 				6E1B9A07210EB48900C21999 /* BCBaseViewController.m in Sources */,
 				6E407E3E210CD8E800F91EFA /* AppDelegate.m in Sources */,
@@ -469,14 +517,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BatteryCar/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BatteryCar/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = BatteryCar/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.batterycar.BatteryCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batterycar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,14 +536,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BatteryCar/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BatteryCar/Other/PrefixHeader.pch";
+				INFOPLIST_FILE = BatteryCar/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.batterycar.BatteryCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batterycar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -10,4 +10,7 @@
 
 @interface BCNavigationView : UIView
 
+@property (strong, nonatomic) UIButton *backButton; //返回按钮
+@property (strong, nonatomic) UILabel *titleLabel; //标题
+
 @end
