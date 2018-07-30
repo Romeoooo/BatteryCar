@@ -8,10 +8,14 @@
 
 #import "BCHomeViewController.h"
 #import "BCHome_NoCarView.h"
+#import "FXBlurView.h"
 
 @interface BCHomeViewController ()
 
+//没有租车
 @property (strong, nonatomic) BCHome_NoCarView *noCarView; //没有租车显示视图
+@property (strong, nonatomic) FXBlurView *blurView; //模糊视图
+//有租车
 
 @end
 
@@ -28,9 +32,24 @@
     testView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view insertSubview:testView atIndex:0];
     
+    [self initNoCarView];
+}
+
+- (void)initNoCarView{
+    if (!self.blurView) {
+        self.blurView = [[FXBlurView alloc] init];
+        [self.blurView setFrame:CGRectMake(0, self.navHeight, self.view.width, self.view.height - self.navHeight)];
+        [self.blurView setBackgroundColor:[UIColor whiteColor]];
+        //设置模式
+        self.blurView.dynamic = YES;
+        //设置模糊半径
+        self.blurView.blurRadius = 4;
+        self.blurView.tintColor = [UIColor blackColor];
+        [self.view addSubview:self.blurView];
+    }
     if (!self.noCarView) {
-        self.noCarView = [[BCHome_NoCarView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height - self.navHeight)];
-        [self.view insertSubview:self.noCarView atIndex:1];
+        self.noCarView = [[BCHome_NoCarView alloc] initWithFrame:CGRectMake(0, self.navHeight, self.view.width, self.view.height - self.navHeight)];
+        [self.view addSubview:self.noCarView];
     }
 }
 
@@ -38,15 +57,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
