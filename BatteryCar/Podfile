@@ -1,0 +1,15 @@
+use_frameworks!
+target 'BatteryCar' do
+
+pod 'IQKeyboardManager'
+pod 'YYKit'
+pod 'BlocksKit'
+pod 'SDWebImage', '4.3.0'
+pod 'MJRefresh'
+pod 'AMapLocation'
+pod 'AMapSearch'
+pod 'MBProgressHUD'
+pod 'AFNetworking', '~> 3.0'
+
+
+end

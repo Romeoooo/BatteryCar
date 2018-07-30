@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54CE9B57E06739EB70C0D9B9 /* Pods_BatteryCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF07E273AC65B10A751E054 /* Pods_BatteryCar.framework */; };
 		6E407E3E210CD8E800F91EFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E407E3D210CD8E800F91EFA /* AppDelegate.m */; };
-		6E407E41210CD8E800F91EFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E407E40210CD8E800F91EFA /* ViewController.m */; };
 		6E407E44210CD8E800F91EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E407E42210CD8E800F91EFA /* Main.storyboard */; };
 		6E407E46210CD8E800F91EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E407E45210CD8E800F91EFA /* Assets.xcassets */; };
 		6E407E49210CD8E800F91EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E407E47210CD8E800F91EFA /* LaunchScreen.storyboard */; };
@@ -16,16 +16,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CF07E273AC65B10A751E054 /* Pods_BatteryCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BatteryCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2E5393772DF429DFC9872A /* Pods-BatteryCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryCar/Pods-BatteryCar.debug.xcconfig"; sourceTree = "<group>"; };
 		6E407E39210CD8E800F91EFA /* BatteryCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E407E3C210CD8E800F91EFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E407E3D210CD8E800F91EFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E407E3F210CD8E800F91EFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E407E40210CD8E800F91EFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6E407E43210CD8E800F91EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E407E45210CD8E800F91EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E407E48210CD8E800F91EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E407E4A210CD8E800F91EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E407E4B210CD8E800F91EFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF1CEE36A0C860C3DA5A51DE /* Pods-BatteryCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryCar/Pods-BatteryCar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +34,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54CE9B57E06739EB70C0D9B9 /* Pods_BatteryCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1B99FF210EB3AA00C21999 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6E407E3C210CD8E800F91EFA /* AppDelegate.h */,
+				6E407E3D210CD8E800F91EFA /* AppDelegate.m */,
+				6E407E42210CD8E800F91EFA /* Main.storyboard */,
+				6E407E45210CD8E800F91EFA /* Assets.xcassets */,
+				6E407E47210CD8E800F91EFA /* LaunchScreen.storyboard */,
+				6E407E4A210CD8E800F91EFA /* Info.plist */,
+				6E407E4B210CD8E800F91EFA /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6E1B9A00210EB3CB00C21999 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6E1B9A01210EB3E500C21999 /* images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6E1B9A01210EB3E500C21999 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6E1B9A03210EB40100C21999 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		6E407E30210CD8E800F91EFA = {
 			isa = PBXGroup;
 			children = (
 				6E407E3B210CD8E800F91EFA /* BatteryCar */,
 				6E407E3A210CD8E800F91EFA /* Products */,
+				DFAF8B1E2FD5AA33E3B53960 /* Pods */,
+				E42C2E1669A21F5FDBA407B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +98,28 @@
 		6E407E3B210CD8E800F91EFA /* BatteryCar */ = {
 			isa = PBXGroup;
 			children = (
-				6E407E3C210CD8E800F91EFA /* AppDelegate.h */,
-				6E407E3D210CD8E800F91EFA /* AppDelegate.m */,
-				6E407E3F210CD8E800F91EFA /* ViewController.h */,
-				6E407E40210CD8E800F91EFA /* ViewController.m */,
-				6E407E42210CD8E800F91EFA /* Main.storyboard */,
-				6E407E45210CD8E800F91EFA /* Assets.xcassets */,
-				6E407E47210CD8E800F91EFA /* LaunchScreen.storyboard */,
-				6E407E4A210CD8E800F91EFA /* Info.plist */,
-				6E407E4B210CD8E800F91EFA /* main.m */,
+				6E1B9A03210EB40100C21999 /* Home */,
+				6E1B9A00210EB3CB00C21999 /* Resource */,
+				6E1B99FF210EB3AA00C21999 /* Other */,
 			);
 			path = BatteryCar;
+			sourceTree = "<group>";
+		};
+		DFAF8B1E2FD5AA33E3B53960 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A2E5393772DF429DFC9872A /* Pods-BatteryCar.debug.xcconfig */,
+				FF1CEE36A0C860C3DA5A51DE /* Pods-BatteryCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E42C2E1669A21F5FDBA407B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF07E273AC65B10A751E054 /* Pods_BatteryCar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E407E4F210CD8E800F91EFA /* Build configuration list for PBXNativeTarget "BatteryCar" */;
 			buildPhases = (
+				49DB6D99CAB6A9E06FE58200 /* [CP] Check Pods Manifest.lock */,
 				6E407E35210CD8E800F91EFA /* Sources */,
 				6E407E36210CD8E800F91EFA /* Frameworks */,
 				6E407E37210CD8E800F91EFA /* Resources */,
+				6DD9980DF043BDB8FFFFD9AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +150,7 @@
 		6E407E31210CD8E800F91EFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BC;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = braspring;
 				TargetAttributes = {
@@ -136,12 +190,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49DB6D99CAB6A9E06FE58200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BatteryCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DD9980DF043BDB8FFFFD9AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BatteryCar/Pods-BatteryCar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BatteryCar/Pods-BatteryCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E407E35210CD8E800F91EFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E407E41210CD8E800F91EFA /* ViewController.m in Sources */,
 				6E407E4C210CD8E800F91EFA /* main.m in Sources */,
 				6E407E3E210CD8E800F91EFA /* AppDelegate.m in Sources */,
 			);
@@ -281,6 +385,7 @@
 		};
 		6E407E50210CD8E800F91EFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A2E5393772DF429DFC9872A /* Pods-BatteryCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +402,7 @@
 		};
 		6E407E51210CD8E800F91EFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1CEE36A0C860C3DA5A51DE /* Pods-BatteryCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
