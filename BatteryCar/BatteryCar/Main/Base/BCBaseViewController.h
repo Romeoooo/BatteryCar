@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BCNavigationView.h"
 
 @interface BCBaseViewController : UIViewController
 
@@ -14,6 +15,7 @@
 
 - (void)setBackButtonImage:(UIImage *)image;
 - (void)setTitleLabelText:(NSString *)text;
+- (void)addMessageButton;
 - (void)backAction;
 
 @end

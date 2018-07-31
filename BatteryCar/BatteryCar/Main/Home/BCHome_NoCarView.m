@@ -11,8 +11,6 @@
 @interface BCHome_NoCarView()
 
 @property (strong, nonatomic) UIView *bottomView; //底部联系客服、领车视图
-@property (strong, nonatomic) UIButton *customerButton; //联系客户
-@property (strong, nonatomic) UIButton *carButton; //立即领车
 
 @property (strong, nonatomic) UIScrollView *contentScrollView; //内容视图
 @property (strong, nonatomic) UIScrollView *carsScrollView; //显示车类型

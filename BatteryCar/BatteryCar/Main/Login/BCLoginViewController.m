@@ -7,6 +7,7 @@
 //
 
 #import "BCLoginViewController.h"
+#import "BCLogin_View.h"
 
 @interface BCLoginViewController ()
 
@@ -16,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setTitleLabelText:@"登录"];
+    [self setBackButtonImage:[UIImage imageNamed:@"dismiss"]];
+    
+    BCLogin_View *loginView = [BCLogin_View shareBCLogin_View];
+    loginView.frame = CGRectMake(0, self.navHeight, self.view.width, self.view.height - self.navHeight);
+    [self.view addSubview:loginView];
+}
+
+- (void)backAction{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

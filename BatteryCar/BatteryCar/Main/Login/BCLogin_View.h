@@ -1,5 +1,5 @@
 //
-//  BCHome_NoCarView.h
+//  BCLoginView.h
 //  BatteryCar
 //
 //  Created by ZhangPeng on 2018/7/30.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BCHome_NoCarView : UIView
+@interface BCLogin_View : UIView
+
++ (BCLogin_View *)shareBCLogin_View;
 
 @end

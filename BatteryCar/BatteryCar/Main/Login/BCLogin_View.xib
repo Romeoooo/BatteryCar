@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BCLogin_View">
             <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -21,7 +21,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="1O2-ED-Bnd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                     <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="deviceRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -36,9 +36,9 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aj2-nw-mSC">
                                             <rect key="frame" x="10" y="0.0" width="319" height="56.5"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="deviceRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,17 +48,20 @@
                                         <constraint firstItem="aj2-nw-mSC" firstAttribute="leading" secondItem="POc-L3-rYj" secondAttribute="leading" constant="10" id="OKc-DN-0s8"/>
                                         <constraint firstAttribute="bottom" secondItem="aj2-nw-mSC" secondAttribute="bottom" id="PiD-jD-ukb"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mc4-Uz-0vf">
                                     <rect key="frame" x="0.0" y="56.5" width="339" height="56.5"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCd-uR-3b0">
                                             <rect key="frame" x="10" y="0.0" width="237" height="56.5"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="deviceRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM7-P0-XnF">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM7-P0-XnF">
                                             <rect key="frame" x="257" y="13.5" width="72" height="30"/>
                                             <color key="backgroundColor" red="0.24313725490196078" green="0.28627450980392155" blue="0.32156862745098036" alpha="1" colorSpace="deviceRGB"/>
                                             <constraints>
@@ -69,6 +72,9 @@
                                             <state key="normal" title="发送验证码">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                            </userDefinedRuntimeAttributes>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,21 +86,37 @@
                                         <constraint firstItem="rCd-uR-3b0" firstAttribute="leading" secondItem="Mc4-Uz-0vf" secondAttribute="leading" constant="10" id="bcy-VY-wru"/>
                                         <constraint firstAttribute="bottom" secondItem="rCd-uR-3b0" secondAttribute="bottom" id="m79-QZ-9Bf"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                    </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="POc-L3-rYj" firstAttribute="height" secondItem="Mc4-Uz-0vf" secondAttribute="height" id="Ikc-AJ-Yj0"/>
                             </constraints>
                         </stackView>
+                        <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54s-zv-Qh7">
+                            <rect key="frame" x="10" y="56" width="319" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="FjA-cd-LbD"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="K8Y-gf-jaD" secondAttribute="bottom" id="0Wa-QD-9Wl"/>
+                        <constraint firstAttribute="trailing" secondItem="54s-zv-Qh7" secondAttribute="trailing" constant="10" id="0Zf-ug-K1F"/>
                         <constraint firstItem="K8Y-gf-jaD" firstAttribute="top" secondItem="HMb-Jk-wyz" secondAttribute="top" id="FO2-Eo-Hde"/>
                         <constraint firstAttribute="height" constant="113" id="Ghy-xb-wR4"/>
                         <constraint firstAttribute="trailing" secondItem="K8Y-gf-jaD" secondAttribute="trailing" id="OEp-uv-p3j"/>
                         <constraint firstItem="K8Y-gf-jaD" firstAttribute="leading" secondItem="HMb-Jk-wyz" secondAttribute="leading" id="hxd-yq-5CB"/>
+                        <constraint firstItem="54s-zv-Qh7" firstAttribute="centerY" secondItem="HMb-Jk-wyz" secondAttribute="centerY" id="sZM-Iq-tAQ"/>
+                        <constraint firstItem="54s-zv-Qh7" firstAttribute="leading" secondItem="HMb-Jk-wyz" secondAttribute="leading" constant="10" id="yuZ-SG-H2h"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                    </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSG-Ee-pL4">
                     <rect key="frame" x="122" y="213" width="130" height="40"/>
@@ -106,6 +128,9 @@
                     <state key="normal" title="登录">
                         <color key="titleColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="deviceRGB"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                    </userDefinedRuntimeAttributes>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="deviceRGB"/>
@@ -123,6 +148,13 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="codeButton" destination="fM7-P0-XnF" id="d5T-sJ-Oub"/>
+                <outlet property="codeTF" destination="rCd-uR-3b0" id="Osb-Kf-D5q"/>
+                <outlet property="loginButton" destination="vSG-Ee-pL4" id="JBu-Qy-oYE"/>
+                <outlet property="phoneTF" destination="aj2-nw-mSC" id="u6u-RE-Ytv"/>
+                <outlet property="tfView" destination="HMb-Jk-wyz" id="29K-lw-IZo"/>
+            </connections>
             <point key="canvasLocation" x="37.5" y="-91"/>
         </view>
     </objects>

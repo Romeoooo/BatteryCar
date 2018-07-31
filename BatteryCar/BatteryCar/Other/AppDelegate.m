@@ -20,6 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     [self configHomeController];
+    [self configApp];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -31,6 +32,10 @@
     UINavigationController *homeNavController = [[UINavigationController alloc] initWithRootViewController:homeController];
     homeNavController.navigationBar.hidden = YES;
     self.window.rootViewController = homeNavController;
+}
+
+- (void)configApp{
+    [[UITextField appearance] setTintColor:[UIColor colorWithHexString:@"#A2A2A2"]];
 }
 
 
